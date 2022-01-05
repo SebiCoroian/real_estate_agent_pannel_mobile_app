@@ -1,10 +1,10 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Ceteras_Alina_Iulia_Laborator10.Data;
+using Real_Estate_Agency.Data;
 using System.IO;
 
-namespace Ceteras_Alina_Iulia_Laborator10
+namespace Real_Estate_Agency
 {
     public partial class App : Application
     {

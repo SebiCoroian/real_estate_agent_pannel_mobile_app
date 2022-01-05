@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Ceteras_Alina_Iulia_Laborator10.iOS
+namespace Real_Estate_Agency.iOS
 {
     public class Application
     {

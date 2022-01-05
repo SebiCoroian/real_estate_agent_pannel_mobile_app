@@ -9,9 +9,9 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ceteras_Alina_Iulia_Laborator10.iOS</RootNamespace>
+    <RootNamespace>Real_Estate_Agency.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Ceteras_Alina_Iulia_Laborator10.iOS</AssemblyName>
+    <AssemblyName>Real_Estate_Agency.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -123,14 +123,17 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Npgsql">
+      <Version>6.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Ceteras_Alina_Iulia_Laborator10\Ceteras_Alina_Iulia_Laborator10.csproj">
+    <ProjectReference Include="..\Real_Estate_Agency\Real_Estate_Agency.csproj">
       <Project>{C5CD09E7-B5D8-4F53-93B0-58CC4F99A616}</Project>
-      <Name>Ceteras_Alina_Iulia_Laborator10</Name>
+      <Name>Real_Estate_Agency</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

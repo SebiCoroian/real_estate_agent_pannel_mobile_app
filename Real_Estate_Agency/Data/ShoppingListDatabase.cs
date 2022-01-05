@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Ceteras_Alina_Iulia_Laborator10.Models;
+using Real_Estate_Agency.Models;
 using SQLite;
 
-namespace Ceteras_Alina_Iulia_Laborator10.Data
+namespace Real_Estate_Agency.Data
 {
     public class ShoppingListDatabase
     {

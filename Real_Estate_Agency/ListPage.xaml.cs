@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ceteras_Alina_Iulia_Laborator10.Models;
+using Real_Estate_Agency.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Ceteras_Alina_Iulia_Laborator10
+namespace Real_Estate_Agency
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListPage : ContentPage

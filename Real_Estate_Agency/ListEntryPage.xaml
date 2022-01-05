@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Real_Estate_Agency.ListEntryPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Adauga Apartament"
+        Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+        Margin="15"
+        HasUnevenRows="True"
+        ItemSelected="OnListViewItemSelected">
+        <ListView.ItemTemplate
+            Margin="20" >
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Label 
+                            Grid.Row="0" 
+                            Grid.RowSpan="4" 
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Text="{Binding Description}" 
+                            FontAttributes="Bold" 
+                            FontSize="Medium"
+                            HorizontalTextAlignment="Start"
+                            VerticalTextAlignment="Center"/>
+                        <Image 
+                            Grid.Row="0"
+                            Grid.RowSpan="4" 
+                            Grid.Column="2"
+                            Grid.ColumnSpan="2"
+                            Source="{Binding ImageUrl}" />
+
+                        <Label 
+                            Grid.Row="4"
+                            Grid.Column="2"
+                            HorizontalTextAlignment="end"
+                            FontAttributes="Bold"
+                            Text="Pret(euro):" />
+                        <Label 
+                            Grid.Row="4"
+                            Grid.Column="3" 
+                            HorizontalTextAlignment="Start"
+                            Text="{Binding Price}" />
+                        <Label 
+                            Grid.Row="5" 
+                            Grid.Column="2"
+                            HorizontalTextAlignment="End"
+                            FontAttributes="Bold"
+                            Text="Suprafata:" />
+                        <Label 
+                            Grid.Row="5" 
+                            Grid.Column="3" 
+                            HorizontalTextAlignment="Start"
+                            Text="{Binding Area}" />
+
+            
+                        <Label 
+                            Grid.Row="6" 
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2" 
+                            HorizontalTextAlignment="Start"
+                            FontAttributes="Bold"
+                            FontSize="Micro"
+                            Text="{Binding Date}" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

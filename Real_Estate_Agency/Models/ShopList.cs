@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using Npgsql;
 
-namespace Ceteras_Alina_Iulia_Laborator10.Models
+namespace Real_Estate_Agency.Models
 {
     public class ShopList
     {
@@ -11,5 +12,8 @@ namespace Ceteras_Alina_Iulia_Laborator10.Models
         public int ID { get; set; }
         public string Description { get; set; }
         public DateTime Date { get; set; }
+        public float Area { get; set; }
+        public float Price { get; set; } 
+        public string ImageUrl { get; set; }
     }
 }

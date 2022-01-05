@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Ceteras_Alina_Iulia_Laborator10
+namespace Real_Estate_Agency
 {
     public partial class MainPage : ContentPage
     {

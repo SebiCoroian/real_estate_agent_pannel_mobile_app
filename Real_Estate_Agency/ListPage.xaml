@@ -1,12 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Ceteras_Alina_Iulia_Laborator10.ListPage">
+             x:Class="Real_Estate_Agency.ListPage">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Editor Placeholder="Enter the description of the shopping list"
+            <Editor Placeholder="Enter the description of the property"
  Text="{Binding Description}"
  HeightRequest="100" />
+                        
+            <Editor Placeholder="Enter the price"
+                 Text="{Binding Price}"
+                 HeightRequest="100" />
+            
+            <Editor Placeholder="Enter the area"
+                 Text="{Binding Area}"
+                 HeightRequest="100" />
+
+            <Editor Placeholder="Enter the image URL"
+                 Text="{Binding ImageUrl}"
+                 HeightRequest="100" />
+
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
